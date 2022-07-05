@@ -1,0 +1,30 @@
+Monolithic architecture
+------------------------
+
+Monolithic Architecture is like a big container, wherein all the software components of an app are assembled and tightly coupled, i.e., each component fully depends on each other.
+
+					client browser
+			customer	product			cost
+			services  <--->	services	<---->	services
+
+Disadvantages
+---------------------
+Disadvantage:
+
+Large and Complex Applications:
+it is difficult for maintenance because they are dependent on each other.
+Slow Development:
+It is because, for modify an application we have to redeploy whole application instead of updates part.
+Unscalable:
+Each copy of the application will access the hole data which make more memory consumption. We cannot scale each component independently.
+Unreliable:
+If one services goes down, then it affects all the services provided by the application.
+Inflexible:
+Really difficult to adopt new technology.It is because we have to change whole application technology.
+
+
+
+Microservices
+----------------------
+It is an architectural development style in which the application is made up of smaller services that handle a small portion of the functionality and data by communicating with each other directly using lightweight protocols like HTTP. 
+The Microservice architecture has a significant impact on the relationship between the application and the database. Instead of sharing a single database with other microservices, each microservice has its own database.
